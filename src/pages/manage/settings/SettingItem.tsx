@@ -110,7 +110,9 @@ const Item = (props: ItemProps) => {
         </Match>
       </Switch>
       <FormHelperText>
-        {props.help ? t(`settings.${props.key}-tips`) : ""}
+        {props.help
+          ? t(`settings.${props.key}-tips`, undefined, props.help)
+          : ""}
       </FormHelperText>
     </FormControl>
   )

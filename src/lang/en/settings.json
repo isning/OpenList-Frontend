@@ -136,6 +136,10 @@
     "Microsoft": "Microsoft",
     "OIDC": "OIDC"
   },
+  "sso_oidc_resource": "SSO OIDC resource (access-token audience)",
+  "sso_oidc_resource-tips": "Expected JWT access-token audience and OAuth2 resource indicator. Required when OIDC role mapping is enabled.",
+  "sso_oidc_role_mapping": "SSO OIDC role mapping (CEL)",
+  "sso_oidc_role_mapping-tips": "OIDC only: one CEL expression using verified access-token claims as claims, returning admin, general, or guest. Return guest explicitly for unmatched roles; invalid expressions reject access. Leave empty to retain legacy SSO login for unbound accounts. Mapping changes require a new login.",
   "sso_oidc_username_key": "SSO oidc username key",
   "sso_organization_name": "SSO organization name",
   "text_types": "Text types",
